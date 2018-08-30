@@ -6,8 +6,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-<h1>In SINGLE_MOVIE</h1>
-			<?php get_template_part( 'content', 'single' ); ?>
+
+			<?php get_template_part( 'content', 'single_movies' ); ?>
 
 			<?php unite_post_nav(); ?>
 

@@ -4,3 +4,15 @@
  */
 @import url('../unite/style.css');
 
+.vo_archive-post{
+    margin: 3%;
+    padding: 3%;
+    background: rgba(140, 49, 255, 0.35);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.vo_archive-post > header > img{
+    width: 100%;
+    height: auto;
+}
