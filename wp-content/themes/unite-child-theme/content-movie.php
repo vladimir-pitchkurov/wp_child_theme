@@ -58,14 +58,14 @@
             <?php $post = get_post();
             $id = get_the_ID();
 
-            echo '<h5 class="col-md-6">Страна:  ' . get_the_term_list($id, 'country', '', ', ', '') . '</h5>';
-            echo '<h5 class="col-md-6">Жанр:  ' . get_the_term_list($id, 'ganre', '', ', ', '') . '</h5>';
-            echo '<h5 class="col-md-6">Дата выхода: ';
+            echo '<h5 class="col-md-6"><i class="fa fa-map-marker" aria-hidden="true"></i>Страна:  ' . get_the_term_list($id, 'country', '', ', ', '') . '</h5>';
+            echo '<h5 class="col-md-6"><i class="fa fa-film" aria-hidden="true"></i>Жанр:  ' . get_the_term_list($id, 'ganre', '', ', ', '') . '</h5>';
+            echo '<h5 class="col-md-6"><i class="fa fa-calendar" aria-hidden="true"></i>Дата выхода: ';
             foreach (get_post_meta($id, 'date') as $item) {
                 echo $item;
             };
             echo '</h5>';
-            echo '<h5 class="col-md-6">Цена: ';
+            echo '<h5 class="col-md-6 "><i class="fa fa-btc" aria-hidden="true"></i>Цена: ';
             foreach (get_post_meta($id, 'price') as $item) {
                 echo $item;
             };
